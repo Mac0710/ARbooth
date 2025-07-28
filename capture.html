@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capture - ARbooth</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <div class="container capture-container">
+    <h1 class="title">Get Ready!</h1>
+
+    <!-- Settings Row -->
+    <div class="settings-bar">
+      <label>
+        Countdown:
+        <select id="countdownSelect">
+          <option value="3" selected>3s</option>
+          <option value="5">5s</option>
+          <option value="10">10s</option>
+        </select>
+      </label>
+
+      <label>
+        Filter:
+        <select id="filterSelect">
+          <option value="none">None</option>
+          <option value="fairytale">Fairy Tale (Disney-ish)</option>
+          <option value="dreamworks">Dreamworks Glow (Pixar-ish)</option>
+          <option value="brickify">Brickify (Lego)</option>
+          <option value="pixel">8-Bit Pixel</option>
+          <option value="vicecity">Vice City (GTA)</option>
+          <option value="toonworld">Toon World (CN)</option>
+          <option value="studiopastel">Studio Pastel (Ghibli)</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Camera Preview -->
+    <video id="camera" autoplay playsinline></video>
+
+    <!-- Countdown -->
+    <div id="countdown" class="countdown"></div>
+
+    <!-- Progress -->
+    <div id="progress" class="progress"></div>
+
+    <!-- Buttons -->
+    <div class="capture-buttons">
+      <button class="start-btn" id="captureBtn">Start Capture</button>
+      <button class="start-btn secondary-btn" onclick="goTo('layout.html')">Back</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/camera.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customize - ARbooth</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <div class="container customize-container">
+    <h1 class="title">Customize Your Photo</h1>
+
+    <div class="customize-flex">
+      <!-- LEFT: Photobooth Frame -->
+      <div class="canvas-container">
+        <canvas id="finalCanvas"></canvas>
+      </div>
+
+      <!-- RIGHT: Tools -->
+      <div class="tools-section">
+        <div class="color-tools">
+          <p class="color-label">Select Frame Color:</p>
+          <div class="color-palette">
+            <button class="color-btn" data-color="#1E1E1E" style="background:#1E1E1E"></button>
+            <button class="color-btn" data-color="#434343" style="background:#434343"></button>
+            <button class="color-btn" data-color="#F5F5F5" style="background:#F5F5F5"></button>
+            <button class="color-btn" data-color="#012969" style="background:#012969"></button>
+            <button class="color-btn" data-color="#f60202" style="background:#f60202"></button>
+            <button class="color-btn" data-color="#f86077" style="background:#f86077"></button>
+            <button class="color-btn" data-color="#c786e1" style="background:#c786e1"></button>
+            <button class="color-btn" data-color="#eeff00" style="background:#eeff00"></button>
+            <button class="color-btn" data-color="#8ee58e" style="background:#8ee58e"></button>
+            <button class="color-btn" data-color="#02c9fb" style="background:#02c9fb"></button>
+            <button class="color-btn" data-color="#800000" style="background:#800000"></button>
+            <button class="color-btn" data-color="#5e311c" style="background:#5e311c"></button>
+          </div>
+        </div>
+        <button class="start-btn" id="downloadBtn">Download</button>
+        <button class="start-btn secondary-btn" onclick="goTo('welcome.html')">Finish</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/customize.js"></script>
+</body>
+</html>

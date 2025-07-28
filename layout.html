@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Layout - ARbooth</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container center">
+    <h1 class="title">Choose Your Layout</h1>
+
+    <div class="layout-options">
+      <div class="layout-item" data-layout="single" onclick="selectLayout(event)">
+        <img src="assets/icons/layout-single.jpg" alt="Single Layout">
+        <p>Single</p>
+      </div>
+      <div class="layout-item" data-layout="strip" onclick="selectLayout(event)">
+        <img src="assets/icons/layout-strip.jpg" alt="Photo Strip Layout">
+        <p>Photo Strip</p>
+      </div>
+      <div class="layout-item" data-layout="grid" onclick="selectLayout(event)">
+        <img src="assets/icons/layout-grid.jpg" alt="4-Grid Layout">
+        <p>4 Grid</p>
+      </div>
+    </div>
+
+    <button class="start-btn" onclick="goTo('capture.html')">Continue</button>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
